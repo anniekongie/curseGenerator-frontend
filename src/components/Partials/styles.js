@@ -17,6 +17,11 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
       size: 18,
       marginLeft: 42,
+    },
+    hover: {
+        '&:hover': {
+          backgroundColor: "transparent"
+        }
     }
     
  }));

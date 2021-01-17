@@ -1,8 +1,7 @@
 import { Box, Typography, Container } from '@material-ui/core';
 import Layout from '../../components/Layout/Layout';
 import TypeRatingForm from '../../components/TypeRatingForm/TypeRatingForm';
-import jonah from '/Users/annie.kong/Projects/Personal/curse-generator-frontend/curse-generator-client/src/components/Partials/jonah-hill.png';
-
+import jonah from '../../jonah-hill.png';
 const LandingPage = (props) => {
     const something = (
         <Box>

@@ -1,7 +1,7 @@
-import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, IconButton,Button } from "@material-ui/core";
 import WarningIcon from '@material-ui/icons/Warning';
 import useStyles from './styles';
-import {withRouter } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 function Header(props) {
     const classes = useStyles();
@@ -13,19 +13,21 @@ function Header(props) {
     }
     const logo = (
         <div>
-            <WarningIcon position="bottom" display="inline" />
-            <Typography display="inline" variant="h4" component="h1">
-                &nbsp;What The Cuss?
-            </Typography>
+            <IconButton onClick={()=>history.push('/')} disableFocusRipple disableTouchRipple classes={{root: classes.hover}}> 
+                <WarningIcon position="bottom" display="inline" />
+                <Typography display="inline" variant="h4" component="h1">
+                    &nbsp;What The Cuss?
+                </Typography>
+            </IconButton>
         </div>
     );
 
     const menuButtons = (
         <div> 
-            <Button classname={classes.menuButton} onClick={()=> redirectTo('/')}>
+            <Button classes={{root: classes.hover}} classname={classes.menuButton} onClick={()=> redirectTo('/')}>
                 Home
             </Button>
-            <Button classname={classes.menuButton} onClick={()=> redirectTo('/about')}>
+            <Button classes={{root: classes.hover}} classname={classes.menuButton} onClick={()=> redirectTo('/about')}>
                 About
             </Button>
         </div>
