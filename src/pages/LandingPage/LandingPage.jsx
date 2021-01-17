@@ -1,12 +1,16 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography, Container } from '@material-ui/core';
 import Layout from '../../components/Layout/Layout';
 import TypeRatingForm from '../../components/TypeRatingForm/TypeRatingForm';
+import jonah from '/Users/annie.kong/Projects/Personal/curse-generator-frontend/curse-generator-client/src/components/Partials/jonah-hill.png';
 
 const LandingPage = (props) => {
     const something = (
         <Box>
-            <Typography variant="h2">Welcome to the Curse Generator! </Typography>
-            <Typography variant="body">Have fun cursing!</Typography>
+            <Container> 
+                <img src={jonah} style={{height: 292.8, width: 267.2}} alt="jonah-hill-logo"/>
+                <Typography variant="h1">The Curse Generator </Typography> 
+            </Container>
+            <Typography variant="h3">Have fun cursing!</Typography>
         </Box>
     )
     const onSubmit = (type,rating) => {

@@ -1,13 +1,24 @@
 import {makeStyles} from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
     header: {
-       backgroundColor: 'pink',
+       backgroundColor: theme.palette.secondary.main, //, //#ded1bd',
     },
     footer: {
-       position: 'absolute',
-       bottom: 0,
+      position: 'relative',
+      marginTop: -25,
+      /* negative value of footer height */
+      height: 25,
+    }, 
+    toolbar: {
+      display: "flex",
+      justifyContent: "space-between",
+    },
+    menuButton: {
+      size: 18,
+      marginLeft: 42,
     }
+    
  }));
 
  export default useStyles;

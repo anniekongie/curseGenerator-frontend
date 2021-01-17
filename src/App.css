@@ -1,3 +1,6 @@
+/* fonts  */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito:wght@300;400&family=Quicksand:wght@400;600&display=swap');
 .App {
   display: flex;
   flex-direction: column;
@@ -13,7 +16,8 @@ body {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: rgb(250,246,242) 
+    /* (246,246,242) */
 }
 .App > main {
   flex-grow: 1;

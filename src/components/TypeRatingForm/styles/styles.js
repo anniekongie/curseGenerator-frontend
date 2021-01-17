@@ -3,8 +3,6 @@ import { Autorenew } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
-      marginLeft: 'auto',
-      marginRight: 'auto',
       // margin: theme.spacing(1),
       minWidth: 120,
       maxWidth: 300,
@@ -20,13 +18,14 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 auto',
         display: 'block',
         height: '20rem',
+        marginBottom: 80,
     },
     formControlRoot: {
       minWidth: 296,
       minHeight: 30,
     },
     container: {
-      paddingTop: '10%',
+      paddingTop: '6%',
       margin: '0 auto',
       display: 'block',
     },
