@@ -14,12 +14,11 @@ import theme from './utils/mui-theme';
 import './App.css';
 const history = createBrowserHistory();
 
-function App() {
+function App(props) {
     return (
         <div className="App">
             <ThemeProvider theme={theme}>
-            <Router history={history}  >
-                <Header history={history}/>
+                <Header history={props.history}/>
                 <main>
                     <Switch>
                         <Route exact path="/" component={LandingPage}/> 
@@ -28,7 +27,6 @@ function App() {
                     </Switch>
                 </main>
                 <Footer />
-            </Router>
             </ThemeProvider>
         </div>
     );

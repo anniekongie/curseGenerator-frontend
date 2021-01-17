@@ -1,9 +1,11 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import WarningIcon from '@material-ui/icons/Warning';
 import useStyles from './styles';
+import {withRouter } from 'react-router-dom';
 
 function Header(props) {
     const classes = useStyles();
+    console.log('props', props)
     const {history} = props;
     const redirectTo = (path) => {
         console.log('pushed to ', path)
@@ -45,4 +47,4 @@ function Header(props) {
     )
 }
 
-export default Header;
+export default withRouter(Header);

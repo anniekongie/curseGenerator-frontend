@@ -2,7 +2,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     wordContainer: {
-        minHeight: 78,
+        minHeight: 148,
         paddingBottom: 70,
     },
     formPaper: {
