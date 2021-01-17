@@ -18,7 +18,7 @@ function GeneratorBox (props) {
         <Paper elevation={3} className={classes.formPaper}>
             {type==="insult" && <Typography variant="h2" style={{paddingTop: 40}}> You </Typography>}
             <Container className={classes.wordContainer} id="wordContainer"> 
-                {result && <Typography variant="h1">{result}</Typography>}
+                {result && <Typography variant="h1">{result} !</Typography>}
             </Container>
             <Button onClick={generateWord}> Generate! </Button>
         </Paper>
