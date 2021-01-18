@@ -1,12 +1,16 @@
 import Layout from '../../components/Layout/Layout';
-import { Typography } from '@material-ui/core';
+import { Typography, Container } from '@material-ui/core';
+import samJ from './samj.png';
 
 const AboutPage = () => {
     return (
-        <Layout> 
-            <Typography>
+        <Layout>
+            <Container style={{marginTop: 40, marginBottom: 40}}>
+            <Typography variant="h2" >
                 Coming Soon!.....ya ninny!
             </Typography>
+            <img src={samJ} alt="the-cursing-king" style={{marginBottom:50}}/>
+            </Container>
         </Layout>
     )
 }
