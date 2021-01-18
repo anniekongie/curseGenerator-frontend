@@ -13,7 +13,6 @@ const LandingPage = (props) => {
         </Box>
     )
     const onSubmit = (type,rating) => {
-        console.log('TYPE,RATING HERE',type,rating)
         props.history.push({pathname: '/generate', state: {rating, type}});
     }
 

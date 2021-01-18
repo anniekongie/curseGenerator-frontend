@@ -4,7 +4,6 @@ import Layout from '../../components/Layout/Layout';
 import GeneratorBox from '../../components/GeneratorBox';
 
 const GeneratorPage = (props) => {
-    console.log('props', props.location);
     const {location: {state : {rating, type }}} = props;
     return (
         <Layout>

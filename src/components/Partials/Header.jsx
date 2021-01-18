@@ -5,10 +5,8 @@ import {withRouter} from 'react-router-dom';
 
 function Header(props) {
     const classes = useStyles();
-    console.log('props', props)
     const {history} = props;
     const redirectTo = (path) => {
-        console.log('pushed to ', path)
         history.push(path);
     }
     const logo = (

@@ -11,7 +11,6 @@ function GeneratorBox (props) {
 
     const generateWord = async () => {
         const res = await axios.post('/generate', {rating, type});
-        console.log('res', res)
         setResult(res.data)
     }
     return (
