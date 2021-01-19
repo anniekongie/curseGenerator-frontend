@@ -13,15 +13,27 @@ const useStyles = makeStyles((theme) => ({
     toolbar: {
       display: "flex",
       justifyContent: "space-between",
+      [theme.breakpoints.down('sm')] : {
+        height: 70,
+        paddingLeft: 0,
+      },
+    },
+    title: {
+      [theme.breakpoints.down('sm')]: {
+        fontSize: 18,
+      },
     },
     menuButton: {
-      size: 18,
+      fontSize: 18,
       marginLeft: 42,
     },
     hover: {
         '&:hover': {
           backgroundColor: "transparent"
-        }
+        },
+        [theme.breakpoints.down('sm')] : {
+          fontSize: 12,
+        },
     }
     
  }));

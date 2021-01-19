@@ -13,16 +13,16 @@ const TypeRatingForm = (props) => {
     return (
         <Paper elevation={3} className={classes.formPaper}>
             <Container className={classes.container}>
-                <FormControl className={classes.formControl} >
+                <FormControl id="landing-formControl" className={classes.formControl} >
                     <InputLabel htmlFor="type">What are you looking for?</InputLabel>
-                    <Select class="form-control" name="type" id="type" onChange={(e)=> setType(e.target.value)} classes={{root: classes.formControlRoot}} required>
-                        <MenuItem value={"insult"}>Insults! - I wanna curse someone out!</MenuItem>
-                        <MenuItem value={"exclamation"}>Exclamations! - I'm frustrated! </MenuItem>
+                    <Select class="form-control" name="type" id="type" onChange={(e)=> setType(e.target.value)} className={classes.selectEmpty} classes={{root: classes.formControlRoot}} required>
+                        <MenuItem value={"insult"}>Insults!</MenuItem>
+                        <MenuItem value={"exclamation"}>Exclamations!</MenuItem>
                     </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="rating" > Choose your profanity level: </InputLabel>
-                    <Select class="form-control" name="rating" id="rating" onChange={(e)=> setRating(e.target.value)}  classes={{root: classes.formControlRoot}} required>
+                    <Select class="form-control" name="rating" id="rating" onChange={(e)=> setRating(e.target.value)} className={classes.selectEmpty} classes={{root: classes.formControlRoot}} required>
                         <MenuItem value={"PG"}>PG</MenuItem>
                         <MenuItem value={"R"}>Rated R</MenuItem>
                     </Select>
