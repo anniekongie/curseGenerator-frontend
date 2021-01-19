@@ -7,9 +7,6 @@ const useStyles = makeStyles((theme) => ({
     },
     selectEmpty: {
       marginTop: theme.spacing(2),
-      // [theme.breakpoints.down('xs')]: {
-      //   fontSize: 13,
-      // }
     },
     formPaper: {
       borderRadius: 4,
@@ -21,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 auto',
         display: 'block',
         height: '20rem',
-        marginBottom: 80,
+        marginBottom: 75,
     },
     formControlRoot: {
       minWidth: '100%',
