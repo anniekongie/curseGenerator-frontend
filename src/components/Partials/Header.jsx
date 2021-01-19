@@ -13,7 +13,7 @@ function Header(props) {
         <div>
             <IconButton onClick={()=>history.push('/')} disableFocusRipple disableTouchRipple classes={{root: classes.hover}}> 
                 <WarningIcon position="bottom" display="inline" />
-                <Typography display="inline" variant="h4" component="h1">
+                <Typography display="inline" variant="h4" component="h1" className={classes.title}>
                     &nbsp;What The Cuss?
                 </Typography>
             </IconButton>

@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
     },
     selectEmpty: {
       marginTop: theme.spacing(2),
+      // [theme.breakpoints.down('xs')]: {
+      //   fontSize: 13,
+      // }
     },
     formPaper: {
       borderRadius: 4,
@@ -23,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     formControlRoot: {
       minWidth: '100%',
       minHeight: 30,
+      marginTop: 13,
     },
     container: {
       paddingTop: '6%',
@@ -31,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
       marginTop: 20,
+      [theme.breakpoints.down('sm')]: {
+        fontSize: 15,
+      },
     }
   }));
 
