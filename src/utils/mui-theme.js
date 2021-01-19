@@ -16,6 +16,15 @@ const theme = createMuiTheme({
             danger: 'orange',
         },
     },overrides: {
+        MuiSelect: {
+            root: {
+            }
+        },
+        MuiInputBase: {
+            root: {
+                width: '90%',
+            }
+        },
         MuiButton: {
             root: {
                 backgroundColor: '#dfcd99',

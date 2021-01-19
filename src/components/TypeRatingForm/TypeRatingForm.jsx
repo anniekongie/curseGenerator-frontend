@@ -13,7 +13,7 @@ const TypeRatingForm = (props) => {
     return (
         <Paper elevation={3} className={classes.formPaper}>
             <Container className={classes.container}>
-                <FormControl className={classes.formControl} >
+                <FormControl id="landing-formControl"className={classes.formControl} >
                     <InputLabel htmlFor="type">What are you looking for?</InputLabel>
                     <Select class="form-control" name="type" id="type" onChange={(e)=> setType(e.target.value)} classes={{root: classes.formControlRoot}} required>
                         <MenuItem value={"insult"}>Insults! - I wanna curse someone out!</MenuItem>

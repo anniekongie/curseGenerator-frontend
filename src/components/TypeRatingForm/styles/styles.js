@@ -1,12 +1,9 @@
 import { makeStyles} from '@material-ui/core/styles'
-import { Autorenew } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
-      // margin: theme.spacing(1),
-      minWidth: 120,
-      maxWidth: 300,
       display: 'block',
+      width:'85%',
     },
     selectEmpty: {
       marginTop: theme.spacing(2),
@@ -14,14 +11,17 @@ const useStyles = makeStyles((theme) => ({
     formPaper: {
       borderRadius: 4,
         marginTop: 20,
-        maxWidth: '60%',
+        width: 656,
+        [theme.breakpoints.down('sm')]: {
+          width: '70%',
+        },
         margin: '0 auto',
         display: 'block',
         height: '20rem',
         marginBottom: 80,
     },
     formControlRoot: {
-      minWidth: 296,
+      minWidth: '100%',
       minHeight: 30,
     },
     container: {
