@@ -13,10 +13,12 @@ function GeneratorBox (props) {
         const res = await axios.post('/generate', {rating, type});
         setResult(res.data)
     }
+
+    const wordPadding = (type==='exclamation') ? 70 : 0;
     return (
         <Paper elevation={3} className={classes.formPaper}>
             {type==="insult" && <Typography variant="h2" className={classes.youText}> You </Typography>}
-            <Container classes={{root: classes.textContainerRoot }} className={classes.wordContainer} id="wordContainer"> 
+            <Container style={{paddingTop: wordPadding}} classes={{root: classes.textContainerRoot }} className={classes.wordContainer} id="wordContainer"> 
                 {result && <Typography variant="h1" className={classes.resultText}>{result} !</Typography>}
             </Container>
             <Button onClick={generateWord}> Generate! </Button>
