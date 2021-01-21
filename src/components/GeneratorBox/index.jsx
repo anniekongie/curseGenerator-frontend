@@ -14,7 +14,7 @@ function GeneratorBox (props) {
         setResult(res.data)
     }
 
-    const wordPadding = (type==='exclamation') ? 70 : 0;
+    const wordPadding = (!result ? 160 : (type==='exclamation') ? 70 : 0);
     return (
         <Paper elevation={3} className={classes.formPaper}>
             {type==="insult" && <Typography variant="h2" className={classes.youText}> You </Typography>}
